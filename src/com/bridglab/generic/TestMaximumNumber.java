@@ -29,11 +29,6 @@ public class TestMaximumNumber {
         }
         return maxValueFloat;
     }
-
-    private static void printMaxValue(Integer maxValue)
-    {
-        System.out.println(" Maximum number is : " + maxValue);
-    }
     private static void printMaxValue(double maxValueFloat)
     {
         System.out.println(" Maximum number is : " + maxValueFloat);
@@ -41,7 +36,7 @@ public class TestMaximumNumber {
     // --------------------- MAin Method -----------------------------------
     public static void main(String[] args)
     {
-        printMaxValue(maximumInteger(50, 200, 100));
+        printMaxValue(maximumInteger(100,200 , 700));
         printMaxValue(maximumFloat(2.1, 1.1, 3.5));
     }
 }
