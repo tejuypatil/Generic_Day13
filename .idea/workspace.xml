@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b68d9210-c885-4f31-83d4-73b7c707fcd5" name="Changes" comment="Added program to given 3 floats find maximum using generic" />
+    <list default="true" id="b68d9210-c885-4f31-83d4-73b7c707fcd5" name="Changes" comment="Added program to given 3 floats find maximum using generic">
+      <change afterPath="$PROJECT_DIR$/src/com/bridglab/test/TestGenerics.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +13,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -26,13 +29,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.bridglab.test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestGenerics">
     <configuration name="TestMaximumNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bridglab.generic.TestMaximumNumber" />
       <module name="Gneric" />
@@ -46,8 +58,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestGenerics" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Gneric" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bridglab.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bridglab.test" />
+      <option name="MAIN_CLASS_NAME" value="com.bridglab.test.TestGenerics" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestGenerics" />
         <item itemvalue="Application.TestMaximumNumber" />
       </list>
     </recent_temporary>
