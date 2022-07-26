@@ -29,14 +29,34 @@ public class TestMaximumNumber {
         }
         return maxValueFloat;
     }
+    public static String maximumString(String first, String second, String third)
+    {
+        int maxValueString = first.length();
+        String letter = first;
+        if (second.length() > maxValueString)
+        {
+            maxValueString = second.length();
+            letter = second;
+        }
+        if (third.length() > maxValueString) {
+            maxValueString = third.length();
+            letter = third;
+        }
+        return letter;
+    }
     private static void printMaxValue(double maxValueFloat)
     {
         System.out.println(" Maximum number is : " + maxValueFloat);
+    }
+    private static void printMaxValue(String maxValueString)
+    {
+        System.out.println(" Maximum String is : " + maxValueString);
     }
     // --------------------- MAin Method -----------------------------------
     public static void main(String[] args)
     {
         printMaxValue(maximumInteger(100,200 , 700));
         printMaxValue(maximumFloat(2.1, 1.1, 3.5));
+        printMaxValue(maximumString("apple","elephant","cat"));
     }
 }
