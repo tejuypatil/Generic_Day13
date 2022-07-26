@@ -1,42 +1,32 @@
 package com.bridglab.generic;
 
-public class TestMaximumNumber {
-    //--------------------Integers -------------------
-    public static int maximumInteger(Integer x, Integer y, Integer z)
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class TestMaximumNumber <S>{
+
+    private S[] inputArray;
+
+    public void MaxValueUsingGenerics(S[] inputArray)
     {
-        Integer maxValue = x;
-        if (y.compareTo(maxValue) > 0)
-        {
-            maxValue = y;
-        }
-        if (z.compareTo(maxValue) > 0)
-        {
-            maxValue = z;
-        }
-        return maxValue;
+        this.inputArray = inputArray;
     }
-    //------------------- Float---------------------------------
-    public static double maximumFloat(Double x, Double y, Double z)
+
+    public static <T> T findMax(T[] myNumber)
     {
-        Double maxValueFloat = x;
-        if (y.compareTo(maxValueFloat) > 0)
-        {
-            maxValueFloat = y;
-        }
-        if (z.compareTo(maxValueFloat) > 0)
-        {
-            maxValueFloat = z;
-        }
-        return maxValueFloat;
+        List myNumberList = Arrays.asList(myNumber);
+        T max = (T) Collections.max( myNumberList );
+        toPrint(max);
+        return max;
     }
-    private static void printMaxValue(double maxValueFloat)
+
+    private static <S> void toPrint(S a)
     {
-        System.out.println(" Maximum number is : " + maxValueFloat);
+        System.out.println(a);
     }
-    // --------------------- MAin Method -----------------------------------
     public static void main(String[] args)
     {
-        printMaxValue(maximumInteger(100,200 , 700));
-        printMaxValue(maximumFloat(2.1, 1.1, 3.5));
+        System.out.println(" ************ Java Generics ********** ");
     }
 }

@@ -1,3 +1,4 @@
+
 package com.bridglab.test;
 
 import com.bridglab.generic.TestMaximumNumber;
@@ -25,4 +26,6 @@ public class TestGenerics {
         Integer maximum2 = findMax.maximumInteger(109, 200, 999);
         Assert.assertEquals((Integer) 999, maximum2);
     }
+
+
 }
